@@ -28,12 +28,7 @@
     <p>{{jobs}}bbb</p>
     <div>
       {%for job in jobs%}
-      <div> 
-        <h4>{{job['title']}} </h4>
-        <h4>Location: {{job['location']}} </h4>
-        
-      </div>
-    
+      {%include 'jobitem.html'%}
       {%endfor%}
     </div>
     <div class="text-center">
